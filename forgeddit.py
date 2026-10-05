@@ -14,8 +14,8 @@ text, then deletes it.
 
 Usage (needs `uv`: https://docs.astral.sh/uv/ ; `brew install uv` on a Mac):
 
-    uv run forgeddit.py export_you_20261004.zip --dry-run
-    uv run forgeddit.py export_you_20261004.zip --older-than 90 --exclude-subreddits mycoolsub
+    uv run --env-file .env forgeddit.py export_you_20261004.zip --dry-run
+    uv run --env-file .env forgeddit.py export_you_20261004.zip --older-than 90 --exclude-subreddits mycoolsub
 
 Credentials (a "script" app from https://www.reddit.com/prefs/apps) come from
 environment variables, so they never land in your shell history:
